@@ -16,22 +16,25 @@ def endResult():
     global totvotes
     global votesm
     global votesg
-    global pictures
     percm = 0
-    average = sum(votes) / len(votes)
-    rAverage = round(average)
+    percg = 0
+    if len(votes) != 0:
+        average = sum(votes) / len(votes)
+        rAverage = round(average)
+    else:
+        rAverage = 3
     if votesm != 0:
-        percm = round(100 / totvotes * votesm) #100 % funktioniert nicht
+        percm = round((100 / totvotes) * votesm) #100 % funktioniert nicht
     if votesg != 0:
         percg = 100 /totvotes * votesg
     print(votesm)
     print(totvotes)
-    print(average)
+    #print(average)
     print(percm)
     print(votes)
     print(pictures[rAverage])
     return(str(percm))
-    #return render_template('result.html', average = pictures[rAverage], percm = percm, percg = percg)
+    #return render_template('result.html', picture = pictures[rAverage], percm = percm, percg = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])
 def api(result):

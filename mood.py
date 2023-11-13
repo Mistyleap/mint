@@ -21,7 +21,7 @@ def endResult():
     #print(average)
     #print(percm)
     print(votes)
-    return render_template('results.html', average = average, percm = percm)
+    return render_template('result.html', average = average, percm = percm)
 
 @app.route('/api/vote/<result>/', methods=['GET'])
 def api(result):

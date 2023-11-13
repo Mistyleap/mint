@@ -8,7 +8,7 @@ votes = []
 votesm = 0
 votesg = 0
 pictures = {1:'lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'traurig.jpeg', 5:'weinend.jpeg'}
-
+#funktioniert das? --> Loris fragen
 
 @app.route("/results/")
 def endResult():
@@ -21,7 +21,7 @@ def endResult():
     average = sum(votes) / len(votes)
     rAverage = round(average)
     if votesm != 0:
-        percm = 100 / totvotes * votesm
+        percm = round(100 / totvotes * votesm) #100 % funktioniert nicht
     if votesg != 0:
         percg = 100 /totvotes * votesg
     print(votesm)
@@ -30,7 +30,7 @@ def endResult():
     print(percm)
     print(votes)
     print(pictures[rAverage])
-    return(str(average), str(percm))
+    return(str(percm))
     #return render_template('result.html', average = pictures[rAverage], percm = percm, percg = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])

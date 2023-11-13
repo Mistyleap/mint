@@ -6,24 +6,34 @@ app = Flask(__name__)
 totvotes = 0
 votes = []
 votesm = 0
+votesg = 0
+pictures = {1:'lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'traurig.jpeg', 5:'weinend.jpeg'}
+
 
 @app.route("/results/")
 def endResult():
     global votes
     global totvotes
     global votesm
+    global votesg
+    global pictures
     percm = 0
-    average = sum(votes[:]) / len(votes[:])
+    average = sum(votes) / len(votes)
+    rAverage = round(average)
     if votesm != 0:
         percm = 100 / totvotes * votesm
-    #print(votesm)
-    #print(totvotes)
-    #print(average)
-    #print(percm)
+    if votesg != 0:
+        percg = 100 /totvotes * votesg
+    print(votesm)
+    print(totvotes)
+    print(average)
+    print(percm)
     print(votes)
-    return render_template('result.html', average = average, percm = percm)
+    print(pictures[rAverage])
+    return(str(average), str(percm))
+    #return render_template('result.html', average = pictures[rAverage], percm = percm, percg = percg)
 
-@app.route('/api/vote/<result>/', methods=['GET'])
+@app.route('/api/vote/<result>/', methods=['POST'])
 def api(result):
     global totvotes
     totvotes += 1
@@ -31,11 +41,19 @@ def api(result):
     votes.append(int(result))
     return redirect('/results/')
 
-@app.route('/api/votes/m/')
+@app.route('/api/votes/m/', methods = ['POST'])
 def apim():
     global votesm
     global totvotes
     votesm += 1
+    totvotes += 1
+    return redirect('/results/')
+
+@app.route('/api/votes/g/', methods = ['POST'])
+def apig():
+    global totvotes
+    global votesg
+    votesg += 1
     totvotes += 1
     return redirect('/results/')
 

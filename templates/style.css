@@ -1,0 +1,237 @@
+titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 50px;
+}
+
+text1{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+}
+text2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+text3{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px;
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+text4{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff;
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+text5{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+text6{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+text7{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 5px solid #000000;
+    background-color: #ffffff; 
+    padding: 10px; 
+    border-radius: 10px; 
+    margin-right: 820px;
+    margin-left: 730px;
+    margin-top: 10px;
+
+}
+
+
+
+
+
+Mudes-Emoji{
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 835px;
+margin-right: 100px;
+justify-content: center;
+
+width: 200px;
+height: 200px;
+font-size: 20px;
+border: none;
+border-radius: 50%;
+background-color: white;
+cursor: pointer;
+outline: none;
+
+}
+
+Weinendes-Emoji{
+
+margin-top: 100px;
+margin-bottom: 100px;
+margin-left: 835px;
+margin-right: 100px;
+justify-content: center;
+
+width: 200px;
+height: 200px;
+font-size: 20px;
+border: none;
+border-radius: 50%;
+background-color: white;
+cursor: pointer;
+outline: none;
+
+}
+
+Gestresstes-Emoji{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 835px;
+        margin-right: 100px;
+        justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+
+    }
+
+
+    Glucklich-Emoji{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 835px;
+        margin-right: 100px;
+        justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+
+    }
+
+    Normales-Emoji{
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 835px;
+        margin-right: 100px;
+        justify-content: center;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+       
+    }
+
+    Trauriges-Emoji{
+
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-left: 835px;
+        margin-right: 100px;
+        justify-content: center;
+
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+
+    }
+
+    Lachendes-Emoji{
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left: 785px;
+        margin-right: 100px;
+        justify-content: center;
+
+      
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+        border: none;
+        border-radius: 50%;
+        background-color: white;
+        cursor: pointer;
+        outline: none;
+    }
+
+

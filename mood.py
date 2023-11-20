@@ -35,7 +35,7 @@ def endResult():
     #return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])
-def api(result): #votes that aren't tired/stressed return a number between 1 and 5 (result)
+def api(result): #votes that aren't tired/stressed return a number between 1 and 5 in result
     global totvotes
     totvotes += 1 # +1 total vote
     votes.append(int(result)) #add this vote to list of votes

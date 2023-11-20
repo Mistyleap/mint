@@ -8,7 +8,6 @@ votes = []
 votesm = 0
 votesg = 0
 pictures = {1:'lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'traurig.jpeg', 5:'weinend.jpeg'}
-#funktioniert das? --> Loris fragen
 
 @app.route("/results/")
 def endResult():
@@ -19,22 +18,22 @@ def endResult():
     percm = 0
     percg = 0
     if len(votes) != 0:
-        average = sum(votes) / len(votes)
-        rAverage = round(average)
+        average = round(sum(votes) / len(votes))
+        #rAverage = round(average) 
     else:
-        rAverage = 3
+        average = 3
     if votesm != 0:
-        percm = round((100 / totvotes) * votesm) #100 % funktioniert nicht
+        percm = round((100 / totvotes) * votesm) #percentage müde
     if votesg != 0:
-        percg = 100 /totvotes * votesg
-    print(votesm)
-    print(totvotes)
-    #print(average)
-    print(percm)
-    print(votes)
-    print(pictures[rAverage])
-    return(str(percm))
-    #return render_template('result.html', picture = pictures[rAverage], percm = percm, percg = percg)
+        percg = round((100 /totvotes) * votesg) #percentage gestresst
+    print('votesm =', votesm)           #testing purposes
+    print('totvotes =', totvotes)
+    print('average =', average)
+    print('percm =', percm)
+    print('votes:', votes)
+    print(pictures[average])
+    return(str(pictures[average]))
+    #return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])
 def api(result):

@@ -7,7 +7,7 @@ totvotes = 0
 votes = []
 votesm = 0
 votesg = 0
-pictures = {1:'lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'traurig.jpeg', 5:'weinend.jpeg'}
+pictures = {1:'Lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'Traurig.jpeg', 5:'Weinend.jpeg'}
 
 @app.route("/results/")
 def endResult():

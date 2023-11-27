@@ -31,7 +31,7 @@ def endResult():
     print('percm =', percm)             #
     print('votes:', votes)              #
     print(pictures[average])            #
-    return(str(pictures[average]))      #
+    return '{} {} {}'.format(str(pictures[average]), str(percm), str(percg))      #
     #return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])

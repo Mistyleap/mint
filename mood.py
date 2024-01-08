@@ -31,8 +31,8 @@ def endResult():
     print('percm =', percm)             #
     print('votes:', votes)              #
     print(pictures[average])            #
-    return '{} {} {}'.format(str(pictures[average]), str(percm), str(percg))      #
-    #return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
+    #return '{} {} {}'.format(str(pictures[average]), str(percm), str(percg))      #
+    return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
 
 @app.route('/api/vote/<result>/', methods=['POST'])
 def api(result): #votes that aren't tired/stressed return a number between 1 and 5 in result

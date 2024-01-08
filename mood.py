@@ -14,25 +14,6 @@ def results():
     global totvotes
     global votesm
     global votesg
-    percm = 0 #percentage tired
-    percg = 0 #percentage stressed
-    if len(votes) != 0:
-        average = round(sum(votes) / len(votes)) #average of votes, rounded on entire numbers (1-5)
-    else:
-        average = 3 #if no votes/only votes for tired or stressed
-    if votesm != 0:
-        percm = round((100 / totvotes) * votesm) #percentage müde
-    if votesg != 0:
-        percg = round((100 /totvotes) * votesg) #percentage gestresst
-    print('votesm =', votesm)           #testing purposes
-    print('totvotes =', totvotes)       #
-    print('average =', average)         #
-    print('percm =', percm)             #
-    print('votes:', votes)              #
-    print(pictures[average])            #
-    #return '{} {} {}'.format(str(pictures[average]), str(percm), str(percg))      #
-    return render_template('result.html', picture = pictures[average], percentage_muede = percm, percentage_gestresst = percg)
-
     average = round(sum(votes) / len(votes)) if len(votes) else 3 #average of votes, rounded on entire numbers (1-5) else 3
 
     percm = round((100 / totvotes) * votesm) if totvotes else 0 #percentage müde

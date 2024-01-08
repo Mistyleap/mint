@@ -1,237 +1,63 @@
-titel{
+body {
+    font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 50px;
+    justify-content: center;
+    margin: 0;
 }
 
-text1{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px;
-    border-radius: 10px;
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
+.card {
+    box-shadow: 0 0 5px gray;
+    padding: 1rem;
+    padding-top: 0px;
+    border-radius: 0.5rem;
+    width: 30%;
 }
-text2{
+
+header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+.centered-row {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px; 
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
-}
-text3{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px;
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
-}
-text4{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff;
-    padding: 10px; 
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
-}
-text5{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff;
-    padding: 10px;
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
-}
-text6{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px; 
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
-}
-text7{
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    border: 5px solid #000000;
-    background-color: #ffffff; 
-    padding: 10px; 
-    border-radius: 10px; 
-    margin-right: 820px;
-    margin-left: 730px;
-    margin-top: 10px;
-
 }
 
-
-
-
-
-Mudes-Emoji{
-
-margin-top: 100px;
-margin-bottom: 100px;
-margin-left: 835px;
-margin-right: 100px;
-justify-content: center;
-
-width: 200px;
-height: 200px;
-font-size: 20px;
-border: none;
-border-radius: 50%;
-background-color: white;
-cursor: pointer;
-outline: none;
-
-}
-
-Weinendes-Emoji{
-
-margin-top: 100px;
-margin-bottom: 100px;
-margin-left: 835px;
-margin-right: 100px;
-justify-content: center;
-
-width: 200px;
-height: 200px;
-font-size: 20px;
-border: none;
-border-radius: 50%;
-background-color: white;
-cursor: pointer;
-outline: none;
-
-}
-
-Gestresstes-Emoji{
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 835px;
-        margin-right: 100px;
-        justify-content: center;
-    width: 200px;
+.percentage-bar-container {
     height: 200px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
+    width: 20px;
+    background-color: #3498db;
+    margin: 0 0 0 0;
+    border-radius: 10px;
+    overflow: hidden;
+    display: inline-block; /* or inline, if applicable */
 
-    }
+}
 
+.percentage-bar {
+    height: 50%; /* Set the initial remaining percentage here */
+    width: 100%;
+    background-color: #eee; /* Set the color of the remaining bar */
+    transition: height 0.3s; /* Add a smooth transition effect */
+}
 
-    Glucklich-Emoji{
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 835px;
-        margin-right: 100px;
-        justify-content: center;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-
-    }
-
-    Normales-Emoji{
-
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 835px;
-        margin-right: 100px;
-        justify-content: center;
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-       
-    }
-
-    Trauriges-Emoji{
-
-        margin-top: 100px;
-        margin-bottom: 100px;
-        margin-left: 835px;
-        margin-right: 100px;
-        justify-content: center;
-
-    width: 200px;
-    height: 200px;
-    font-size: 20px;
-    border: none;
-    border-radius: 50%;
-    background-color: white;
-    cursor: pointer;
-    outline: none;
-
-    }
-
-    Lachendes-Emoji{
-        margin-top: 50px;
-        margin-bottom: 100px;
-        margin-left: 785px;
-        margin-right: 100px;
-        justify-content: center;
-
-      
-    width: 300px;
-    height: 300px;
-    font-size: 20px;
-        border: none;
-        border-radius: 50%;
-        background-color: white;
-        cursor: pointer;
-        outline: none;
-    }
-
-
+.percentage-display {
+    font-family: 'Arial', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.percentage-container {
+    margin: 5rem;
+    display: inline-block; /* or inline, if applicable */
+    text-align: center;
+}

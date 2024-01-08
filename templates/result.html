@@ -1,11 +1,59 @@
-<head>
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <title>Inverted Vertical Percentage Bar</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
-<body>
-    <div>
-        <input type="range" name="" value="{{average}}" min="0" max="4" step="1">
-        <p>{{percm}}</p>
-        <img src="{{picture}}" alt="">
+
+<body style="height: 100vh;">
+
+    <header>
+        <h1>Resultate</h1>
+    </header>
+
+    <div class="centered-row">
+        <div class="percentage-container">
+            <div class="percentage-display" id="percentageDisplayLeft">50%</div>
+            <div class="percentage-bar-container">
+                <div class="percentage-bar" id="percentageBarLeft"></div>
+            </div>
+            <div class="percentage-display">gestresst</div>
+        </div>
+        <img src="{{picture}}" alt="{{picture}}" style="width: 50vh; height: 50vh;">
+        <div>
+            <div class="percentage-display" id="percentageDisplayRight">50%</div>
+            <div class="percentage-bar-container">
+                <div class="percentage-bar" id="percentageBarRight"></div>
+            </div>
+            <div class="percentage-display">müde</div>
+        </div>
     </div>
+
+    <script>
+        // Update the inverted percentage bar and display
+        function updateInvertedPercentageLeft(percentage) {
+            var percentageBar = document.getElementById('percentageBarLeft');
+            var percentageDisplay = document.getElementById('percentageDisplayLeft');
+
+            percentageBar.style.height = (100 - percentage) + '%';
+            percentageDisplay.textContent = percentage + '%';
+        }
+
+        function updateInvertedPercentageRight(percentage) {
+            var percentageBar = document.getElementById('percentageBarRight');
+            var percentageDisplay = document.getElementById('percentageDisplayRight');
+
+            percentageBar.style.height = (100 - percentage) + '%';
+            percentageDisplay.textContent = percentage + '%';
+        }
+
+        // Example: Update the inverted percentage to 30%
+        updateInvertedPercentageLeft('{{ percentage_gestresst }}');
+        updateInvertedPercentageRight('{{ percentage_muede }}');
+    </script>
+
 </body>
 
+</html>

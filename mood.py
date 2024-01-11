@@ -6,7 +6,13 @@ totvotes = 0 #total votes
 votes = [] #votes that are not tired/stressed (numbers)
 votesm = 0 #votes tired
 votesg = 0 #votes stressed
-pictures = {1:'Lachend.jpeg', 2:'gluecklich.jpeg', 3:'normal.jpeg', 4:'Traurig.jpeg', 5:'Weinend.jpeg'} #pictures corresponding to the average of votes
+pictures = {
+                1:'Lachend.png', 
+                2:'gluecklich.png', 
+                3:'normal.png', 
+                4:'Traurig.png', 
+                5:'Weinend.png',
+            } #pictures corresponding to the average of votes
 
 @app.route("/results/")
 def results():

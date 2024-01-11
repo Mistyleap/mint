@@ -3,11 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Inverted Vertical Percentage Bar</title>
+    <title>Resultate</title>
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
 </head>
 
-<body style="height: 100vh;">
+<body>
 
     <header>
         <h1>Resultate</h1>
@@ -22,7 +22,7 @@
             <div class="percentage-display">gestresst</div>
         </div>
         <img src="{{picture}}" alt="{{picture}}" style="width: 50vh; height: 50vh;">
-        <div>
+        <div class="percentage-container">
             <div class="percentage-display" id="percentageDisplayRight">50%</div>
             <div class="percentage-bar-container">
                 <div class="percentage-bar" id="percentageBarRight"></div>

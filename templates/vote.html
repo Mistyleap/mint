@@ -1,73 +1,72 @@
 <!DOCTYPE html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
-    <title>Abstimmen</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=0.5">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+        <title>Abstimmen</title>
+    </head>
 
-<body>
-    <header>
-        <h1>Wie fühlst du dich heute?</h1>
-    </header>
+    <body>
+        <header>
+            <h1>Wie fühlst du dich heute?</h1>
+        </header>
 
-    <div class="card">
-        <h3>Mir geht's sehr schlecht.</h3>
-        <form action="/api/vote/5/" method="post">
-            <input class="img" alt="Weinend" width="10" height="10" type="image" type="submit" value="5"
-                src="{{url_for('static', filename='images/Weinend.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Mir geht's sehr schlecht.</h3>
+            <form action="/api/vote/5/" method="post">
+                <input class="img" alt="Weinend" type="image" type="submit" value="5"
+                    src="{{url_for('static', filename='images/Weinend.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Mir geht's schlecht.</h3>
-        <form action="/api/vote/4/" method="post">
-            <input class="img" alt="Traurig" width="10" height="10" type="image" type="submit" value="4"
-                src="{{url_for('static', filename='images/Traurig.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Mir geht's schlecht.</h3>
+            <form action="/api/vote/4/" method="post">
+                <input class="img" alt="Traurig" width="10" height="10" type="image" type="submit" value="4"
+                    src="{{url_for('static', filename='images/Traurig.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Mir geht's weder gut noch schlecht.</h3>
-        <form action="/api/vote/3/" method="post">
-            <input class="img" alt="Normal" width="10" height="10" type="image" type="submit" value="3"
-                src="{{url_for('static', filename='images/normal.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Mir geht's weder gut noch schlecht.</h3>
+            <form action="/api/vote/3/" method="post">
+                <input class="img" alt="Normal" width="10" height="10" type="image" type="submit" value="3"
+                    src="{{url_for('static', filename='images/normal.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Mir geht's gut.</h3>
-        <form action="/api/vote/2/" method="post">
-            <input class="img" alt="Glücklich" width="10" height="10" type="image" type="submit" value="2"
-                src="{{url_for('static', filename='images/gluecklich.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Mir geht's gut.</h3>
+            <form action="/api/vote/2/" method="post">
+                <input class="img" alt="Glücklich" width="10" height="10" type="image" type="submit" value="2"
+                    src="{{url_for('static', filename='images/gluecklich.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Mir geht's super gut.</h3>
-        <form action="/api/vote/1/" method="post">
-            <input class="img" alt="Lachend" width="10" height="10" type="image" type="submit" value="1"
-                src="{{url_for('static', filename='images/Lachend.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Mir geht's super gut.</h3>
+            <form action="/api/vote/1/" method="post">
+                <input class="img" alt="Lachend" width="10" height="10" type="image" type="submit" value="1"
+                    src="{{url_for('static', filename='images/Lachend.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Ich bin müde.</h3>
-        <form action="/api/votes/m/" method="post">
-            <input class="img" alt="Müde" width="10" height="10" type="image" type="submit"
-                src="{{url_for('static', filename='images/Mude.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
+        <div class="card">
+            <h3>Ich bin müde.</h3>
+            <form action="/api/votes/m/" method="post">
+                <input class="img" alt="Müde" width="10" height="10" type="image" type="submit"
+                    src="{{url_for('static', filename='images/Mude.png')}}" name="Bildbutton">
+            </form>
+        </div>
 
-    <div class="card">
-        <h3>Ich bin gestresst.</h3>
-        <form action="/api/votes/g/" method="post">
-            <input class="img" alt="Gestresst" width="10" height="10" type="image" type="submit"
-                src="{{url_for('static', filename='images/Gestresstes.jpeg')}}" name="Bildbutton">
-        </form>
-    </div>
-</body>
-
-
+        <div class="card">
+            <h3>Ich bin gestresst.</h3>
+            <form action="/api/votes/g/" method="post">
+                <input class="img" alt="Gestresst" width="10" height="10" type="image" type="submit"
+                    src="{{url_for('static', filename='images/Gestresstes.png')}}" name="Bildbutton">
+            </form>
+        </div>
+    </body>
+    
 </html>
